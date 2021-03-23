@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/reuse-redistribute.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:34:07 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Circular Economy Toolkit</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+     <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" media="all" href="css/styleq.css">
+	<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+	<meta name="keywords" content="Circular economy strategy opportunities workshop Cradle-to-cradle toolkit Circular Economy sustainability workshop design energy sustainability toolkit sustainability opportunities scarce materials benefit remanufacture refurbishment reuse recycling products as a service manufacture maintain repair robustness lifetime" />
+	<meta name="description" content="The Circular Economy Toolkit is a free resource for businesses to find opportunities in the Circular Economy" />
+    <link rel="stylesheet" href="jquery-ui.css" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+	<script src="js/jcarousellite_1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+	  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+      <script type="text/javascript" src="cycle.js"></script>
+      <script type="text/javascript">
+	$(document).ready(function(){
+			$('.slider_wraper').cycle({
+					startingSlide:    0, 
+				fx:     'scrollHorz', 
+				speed:  1000, 
+				next:   '#next',
+				prev:'#previous',
+				preview: '#preview',
+				timeout: 5000,
+				slideExpr:"div.slider",
+				pager: ".pager",
+				auto:  'true',
+				
+			
+				
+			});	
+				$('.slider_wraper').cycle('pause');
+					$('#next').click (function(){
+						$('.slider_wraper').cycle('resume')
+					})
+					
+				
+	});
+</script>
+    <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e) { e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });
+    </script>
+	
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-42799978-1', 'circulareconomytoolkit.com');
+			ga('send', 'pageview');
+
+</script>
+	
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+	
+	
+	
+        <a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+		
+		
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a style="color:#009FE3" href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a  href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+			</br>
+				
+			</ul>
+			<hr width="100%" size="2" noshade="" style="float:left;">
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content">
+               <br/>
+               <div id="inline">
+	<form id="contact" name="contact" action="#" method="post">
+		<fieldset>
+		<legend>Please complete the following form</legend>
+		<label for="cname"><span class="required">*</span> Company Name</label>
+		<input name="cname" type="text" id="cname" class="txt" />
+        
+        <label for="comments"><span class="required">*</span>What have they done? &nbsp;&nbsp;Remaining <span id="count"></span> characters</label>
+		<textarea name="msg" id="msg"></textarea>
+        
+        <label for="weblink"><span class="required">*</span>Enter Website link</label>
+		<input name="wlink" type="text" id="wlink" class="txt" />
+        
+		<label for="email"><span class="required">*</span> Email</label>
+		<input name="email" type="email" id="email" class="txt" />
+
+		<br />
+		<script type="text/javascript">
+	var maxchar = 250;
+		var i = document.getElementById("msg");
+		var c = document.getElementById("count");
+		c.innerHTML = maxchar;
+			
+		i.addEventListener("keydown",count);
+		
+		function count(e){
+			var len =  i.value.length;
+			if (len >= maxchar){
+			   e.preventDefault();
+			} else{
+			   c.innerHTML = maxchar - len-1;   
+			}
+		}
+	</script>
+
+		<button id="send" class="button">Send E-mail</button>
+		</fieldset>
+	</form>
+</div>
+               <!-- form>
+                    <div id="radio">
+                        <input type="radio" id="radio1" value="one"   name="radioGroup" checked/><label for="radio1">Maintanence</label>
+                        <input type="radio" id="radio2" value="two"   name="radioGroup" /><label for="radio2">Spare parts</label>
+                        <input type="radio" id="radio3" value="three" name="radioGroup" /><label for="radio3">Any old iron</label>
+                    </div>
+                </form -->
+                <div id="accordion">
+                    <h3><a href="#"><strong>Introduction - Reuse/Redistribution</strong></a></h3>
+                    <div>
+                        <p>
+                            Direct Secondary Re-usage or resale extends the product life by second hand use. Therefore, fewer products, 
+							which serve for the same purpose, have to be produced (Truttmann, Rechberger, 2006). The reused products can be 
+							the complete products, or can be components of the product which are then sold (Amelia et al 2009). Re-usage of 
+							a component or product should be considered against the energy consumption throughout its lifetime. For example 
+							older electrical and electronic equipment tends to consume more energy and this might offset the achievements of 
+							product life extension (Truttmann, Rechberger, 2006).
+							<br>
+							<br>
+							In addition to the resale business it is possible to offer:
+							<div style="margin-left: 3em;">
+								<ul>
+								<li>Testing and certification</li>
+								<li>Re-warranty</li>
+								<li>Cleaning/Valeting</li>
+								</ul>
+							</div>
+                        </p>
+                        
+                    </div>
+                    <h3><a href="#">Benefits</a></h3>
+                    <div>
+                        <p>
+                            <div style="margin-left: 3em;">
+							<ul>
+							<li>Prevents the need for further materials to be used for new products </li>
+							<li>Reuse can increase profits by reducing materials and energy costs</li>
+							<li>Reduces impact to the environment </li>
+							<li>Reduces dependency on new components (Amelia et al 2009)</li>							
+							</ul>
+							</div>
+                        </p>
+                    </div>
+                    <h3><a href="#">Considerations</a></h3>
+                    <div>
+					
+						<p>
+						
+                        <table border="3">
+						<tr>
+						<td><center><span style='font-weight: bold;'>Consideration</span></center></td>
+						<td><center><span style='font-weight: bold;'>Challenge</span></center></td>
+						<td><center><span style='font-weight: bold;'>Opportunity</span></center></td>
+						</tr>
+						<tr>
+						<td>Competition</td>
+						<td>Potentially strong competition including from the internet or local used product suppliers.</td>
+						<td>A good reputation service can be provided with added value such as quality checks, warranty and cleaning.</td>
+						</tr>
+						<tr>
+						<td>Quality and Company Reputation</td>
+						<td>Poor quality products or parts can damage company reputation.</td>
+						<td>Reputation of the business provides reassurance to the customer and a product with appropriate quality checks and warranty can provide peace of mind to the customer.</td>
+						</tr>
+						<tr>
+						<td>Competitive Pricing</td>
+						<td>Price needs to be substantially low enough to drive sales for the second hand goods whilst being profitable.</td>
+						<td>A competitive price brings customers for second hand sales and can lead to future servicing/maintenance and new product sales.</td>
+						</tr>
+						<tr>
+						<td>Volume of Demand</td>
+						<td>Low demand possible of used products with erratic sales and costly inventory.</td>
+						<td>Advertisement can improve demand as can a good company and product reputation.</td>
+						</tr>
+						<tr>
+						<td>Volume of Supply</td>
+						<td>Low supply of used products reduces profits.</td>
+						<td>Create and incentivise take-back networks to increase volume of supply.</td>
+						</tr>
+						<tr>
+						<td>Price Transparency</td>
+						<td>Lack of price transparency leads to confusion and distrust. Consistency required between ‘stores’.</td>
+						<td>Keep pricing transparent through standard prices and price calculators.</td>
+						</tr>
+						<tr>
+						<td>Competition</td>
+						<td>Potentially strong competition from the internet or local used-product suppliers</td>
+						<td>Can collaborate with local suppliers, internet auction stores or establish own second hand sales internet platform</td>
+						</tr>
+						
+						</table>
+						</p>
+						
+                    </div>
+                    <h3><a href="#">Product Design</a></h3>
+                    <div>
+                        <p>
+                            The products appropriate for direct secondary re-usage can be very varied, providing there is demand for a product and 
+							the price is right for the customer. Consider internet auction sites which resell a complete variety of products at 
+							different prices, levels of quality, remaining lifetimes, delivery times and service that is provided to the customer.
+                        </p>
+                    </div>
+                    <h3><a href="#">Collection</a></h3>
+                    <div>
+                        <p>
+                            Collection of the product can be relatively straightforward for direct secondary re-usage. As the owner physically 
+							has the item and wants money from it, they are incentivised to pass-on the product to the next owner, be it to another 
+							customer, a product distributor or third party provider. The types of collection are:
+							<div style="margin-left: 3em;">
+							<ul>
+								<li>Customer-to-customer delivery</li>
+								<li>Customer-to-distributor/manufacturer</li>
+								<li>Customer-to-third party collection provider</li>
+							</ul>
+							</div>
+                        </p>
+                    </div>
+                    <h3><a href="#">Case studies</a></h3>
+                    <!--<div class="slider_wraper">
+                     <div id="previous"></div>
+            <div id="next"></div>
+                        
+                            
+							<div class="slider"><img src="images/120x120.gif" width="60" height="60"><p><span style='font-weight: bold;'>Cummins</span> take engines and parts at the end of their useful life and return them to productive use. Cummins  
+							remanufacturing had sales of $1 billion in 2011, remanuafacturing 1,000 components and 2,000 engines. Remanufacturing 
+							requires about 85 percent  less energy than manufacturing the same product with new parts. 
+							<a target="_blank" href="http://www.cummins.com/cmi/navigationAction.do?nodeId=127&siteId=1&nodeName=Remanufacturing&menuId=1050">Link</a></p></div>
+							
+						<div class="slider"><img src="images/120x120.gif" width="60" height="60">	<p><span style='font-weight: bold;'>HP</span> offer a variety of remanufactured products which can be purchased for a reduced cost to the customer. The 
+							remanufacturing process also includes testing certification and warranty to ensure the high quality standards are met. 
+							<a target="_blank" href="http://www8.hp.com/uk/en/hp-information/hp-renew/program.html">Link</a></p>
+                            </div>
+							
+							<div class="slider"><img src="images/120x120.gif" width="60" height="60"><p><span style='font-weight: bold;'> Giroflex </span> design and manufacture office chairs. Their 656 chair series has been awarded cradle-to-cradle certification 
+							for the closed-loop usage of materials. For ease of remanufacturing, the chair can be totally disassembled in 10 minutes 
+							before the parts are reused. 
+							<a target="_blank" href="http://www.giroflex.com/content/unternehmen/Sustainability.pdf?country=6&language=en">Link</a>
+                            </p>
+                            </div>
+                    </div>-->
+                    <div id="slideshow">
+                <div id="nav_left">
+                <img src="images/left_arrow.png" alt="Left" title="Click Here" />
+                </div>
+                <div id="main-slider">
+                    <ul>
+                        <li>
+                        <img src="images/slideshow/patagonia.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                       
+                        <p><strong>Patagonia</strong> work with eBay to sell used Patagonia clothing. The website allows you to browse worn Patagonia clothes, whilst promoting the company’s corporate responsibility values. The website is also linked to Patagonia’s main website to allow internet traffic to pass. 
+							<a target="_blank" href="http://www.patagonia.com/us/common-threads/">Link</a></p>
+                        
+                        
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/cat.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                        <p><strong>Caterpillar</strong> has a website to trade second hand lifting and excavating equipment from Caterpillar and other manufacturers. Caterpillar also provides the added value of inspection, certification, parts, servicing, repairs, financing and extended service coverage. 
+							<a target="_blank" href="http://www.uk.cat.com/used-equipment">Link</a></p>
+                        
+                        </span>
+                        </li>
+                        
+                        
+                        
+                      <!--  <li>
+                        <img src="images/slideshow/image4.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s... <a class="readmore" href="#">Read more</a></p>
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/image3.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.. <a class="readmore" href="#">Read more</a></p>
+                        
+                        </span>
+                        </li>-->
+                        
+                        
+                    </ul>
+                </div>    
+                <div id="nav_right">
+                <img src="images/right_arrow.png" alt="Right" title="Click Here"/>
+                </div>
+            </div>
+                </div>
+                        <p><a class="button modalbox" href="#inline"><font color = "white"> Add your own case study<font color></a></p>
+
+			</div>
+		</div>
+		<aside id="sideLeft">
+            <p>&nbsp;</p>
+            <img src="images/Circ4.png" usemap="#sb21186" width="352" height="383" alt="click map" border="0" class="map"/>
+            <map id="sb21186" name="sb21186">
+                <area shape="circle" id="squid1" alt="some_text_1" coords="179,56,45"  href="design-manufacture-distribute.html" data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Design, Manufacture and Distribute"/>	
+                <area shape="circle" id="squid2" alt="some_text_2" coords="295,125,45" href="usage.html"                         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Usage"/>	
+                <area shape="circle" id="squid3" alt="some_text_3" coords="293,261,45" href="maintain-repair.html"               data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Maintain / Repair"/>	
+                <area shape="circle" id="squid4" alt="some_text_4" coords="175,326,45" href="reuse-redistribute.html"            data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Reuse / Redistribute"/>	
+                <area shape="circle" id="squid5" alt="some_text_5" coords="59,257,45"  href="refurbish-remanufacture.html"       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Refurbish / Remanufacture"/>	
+                <area shape="circle" id="squid6" alt="some_text_6" coords="61,122,45"  href="recycle.html"                       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Recycle"/>	
+                <area shape="circle" id="squid7" alt="some_text_7" coords="177,192,56" href="products-as-a-service.html"         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Products as a Service"/>	
+				<area shape="rectangle" id="squid7" alt="some_text_7" coords="1,1,52,50" href="tools.html" 						 data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Tools"/>                
+
+			</map>
+		</aside>
+	</section>
+</div>
+<p>&nbsp;</p>
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+</body>
+
+<!-- Mirrored from circulareconomytoolkit.org/reuse-redistribute.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:34:10 GMT -->
+</html>

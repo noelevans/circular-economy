@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/introduction.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:32:49 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>CE Toolkit</title>
+        <link rel="icon" type="image/icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery.maphilight.js"></script>
+	<meta name="keywords" content="Circular economy strategy opportunities workshop Cradle-to-cradle toolkit Circular Economy sustainability workshop design energy sustainability toolkit sustainability opportunities scarce materials benefit remanufacture refurbishment reuse recycling products as a service manufacture maintain repair robustness lifetime" />
+	<meta name="description" content="The Circular Economy Toolkit is a free resource for businesses to find opportunities in the Circular Economy" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e) { e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+	
+	
+	
+        <a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+		
+		
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a style="color:#009FE3" href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+		</br>
+				
+		</ul>
+		<hr width="100%" size="2" noshade="" style="float:left;">
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content" style="padding: 0 0 0 30px">
+               <br/>
+               <!-- form>
+                    <div id="radio">
+                        <input type="radio" id="radio1" value="one"   name="radioGroup" checked/><label for="radio1">Maintanence</label>
+                        <input type="radio" id="radio2" value="two"   name="radioGroup" /><label for="radio2">Spare parts</label>
+                        <input type="radio" id="radio3" value="three" name="radioGroup" /><label for="radio3">Any old iron</label>
+                    </div>
+                </form -->
+                <div>
+					<p>
+					<span style='font-weight: bold;'>The Circular Economy</span>
+					</br>
+					We live on a finite planet, with a growing population and increasing living standards. Our current economy is linear, where we take,
+					make, use and dispose of resources. This has caused an increase and instability to raw material and energy prices, unnecessary waste 
+					and damage to the environment. This linear economic model is simply unsustainable.
+					</br>
+					</br>
+					To create a sustainable future for our finite planet, we must rethink how we use our resources to ensure we turn a linear economy 
+					in to a circular economy. In this future state, resources will continuously be reused and there will be no net effect to the environment.
+					</br>
+					</br>
+					There are many different ways in which the circular economy can be achieved and it will require co-ordination and acceptance from 
+					companies, NGOs, governments and consumers. For further information on the circular economy, see the 
+					<a target="_blank" href="http://www.ellenmacarthurfoundation.org/">Ellen MacArthur Foundation</a> 
+					who lead the Circular Economy agenda. 
+					</br>
+					</br>
+					Watch this introductory video to learn more (2min 12s):
+					
+					<div id="content" style="padding: 0 0 0 260px">
+					<html>
+					<body>
+					<iframe src="http://www.youtube.com/embed/TtR1ibE8Zt0"
+					width="420" height="236" frameborder="0" allowfullscreen align="middle">
+					</iframe>
+					</body>
+					
+<!-- Mirrored from circulareconomytoolkit.org/introduction.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:32:50 GMT -->
+</html>
+					</div>
+					</p>				
+					<div id="content" style="padding: 0 0 0 10px">
+					(Accenture, Guardian, UNEP, World Bank, OECD, Exxon, Shell, WEF, American Chemical Society, IMechE)
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</section>
+</div>
+<p>&nbsp;</p>
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/Assessmenttool.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:33:10 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>CE Toolkit</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/styleq.css">
+    <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+     
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/tool.js"></script>
+    
+    <!-- Include Slider JavaScript and CSS -->
+	<script src="slider/js/simple-slider.js"></script>
+	<link href="slider/css/simple-slider.css" rel="stylesheet" type="text/css" />
+	
+    <script src="js/jcarousellite_1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
+	<meta name="keywords" content="words,to,be,found,with,when,googling" />
+	<meta name="description" content="Description to appear on Google etc" />
+    <script type="text/javascript" src="cycle.js"></script>
+    <script type="text/javascript" src="tinybox.js"></script>
+    <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e){ e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });
+    </script>
+      <script type="text/javascript">
+	$(document).ready(function(){
+			$('.slider_wraper').cycle({
+					startingSlide:    0, 
+				fx:     'scrollHorz', 
+				speed:  1000, 
+				next:   '#next',
+				prev:'#previous',
+				preview: '#preview',
+				timeout: 5000,
+				slideExpr:"div.slider",
+				pager: ".pager",
+				auto:  'true',
+				
+			
+				
+			});	
+				$('.slider_wraper').cycle('pause');
+					$('#next').click (function(){
+						$('.slider_wraper').cycle('resume')
+					})
+					
+				
+	});
+</script>
+   
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-42799978-1', 'circulareconomytoolkit.com');
+			ga('send', 'pageview');
+
+</script>
+   
+   
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+        
+		<a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+        
+		
+		<ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a style="color:#009FE3" href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+			</br>
+				
+		</ul>
+		<hr width="100%" size="2" noshade="" style="float:left;">
+	
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content_tool">
+            <br/>
+            <div id="inline">
+                <form id="contact" name="contact" action="#" method="post">
+                    <fieldset>
+                    <legend>Please complete the following form</legend>
+                    <label for="email"><span class="required">*</span> Email</label>
+                    <input name="email" type="email" id="email" class="txt" />
+            
+                    <br/>
+            
+                    <button id="send_user" onclick="sendEmailToUser()" class="button">Send E-mail</button>
+                    </fieldset>
+                </form>
+            </div>
+            
+            
+            <div id="inline_info"><br/>
+            	<h5>The Circular Economy Toolkit - 5 Minute Opportunity Assessment Tool</h5><br/>
+                <p>The opportunity assessment tool has combined literature, survey results and observations from workshops. The assessment tool will provide an indicator of potential areas for business opportunity or improvement according to the product design and your business operations. Greater benefit may be seen according to industry, product, positioning in the value chain, relation with the customer etc. The opportunity assessment tool should be complemented by reading the toolkit, case studies, using the tools provided and by running your own workshop.</p><br/><br/>
+                
+                <h5>What next?</h5><br/>
+                <p>Once you know the areas of potential greatest opportunity, read more information in the toolkit and use more of the tools explained. Start thinking how your business could start making money out of these opportunities through offering new services, product re-designs or by satisfying the customer need to make and support more sustainable, circular products.<br/><br/>
+Why not set-up your own workshop to validate your findings and start implementing some of these opportunities? 
+</p><br/><br/>
+            
+				<h5>How does the tool work?</h5><br/>
+                <p>For design, manufacture and design, usage and recycling phases, the product design alone is considered and a ranking is placed according to an average of the results (low = 1, medium =2, high =3).<br/><br/>
+For extensions to existing services (maintain/repair, reuse/redistribute, refurbish/remanufacture and products as a service) results are taken from each section and the opportunity (including financial viability and market growth potential) is considered against the current product design. Each line is taken in to account and an average taken for the results for the opportunity and feasibility. The results are then plotted on the 3x3 matrix below. If there is high business opportunity and the product design is well suited, it's rated as a potential 'high opportunity'. If there is little business opportunity and the product design does not aid the service, then it's ranked as a lower opportunity, as shown here:<br/>
+<img id="info_diagram" src="images/tool/diagram.png" alt="Diagram"/>
+
+
+</p><br/><br/>
+
+				<h5>The tool doesn't give the answers I was expecting?</h5><br/>
+                <p>The tool has been designed to capture current product design and business operations. A change in either will affect the size of the opportunity. For example, if there is a strong market for remanufactured goods, but the product design does not support remanufacture, then the opportunity will be ranked low. If a product redesign took place to make the part say easier to disassemble and more modular in design, then the opportunity would increase.<br/><br/>
+It should be noted that the assessment tool considers your results against best practise e.g. using 100% fully recycled materials is excellent for the Circular Economy, however it might be technologically unachievable. The assessment tool is unable to assess the difficulty for your business to further stretch the product or service performance. This needs to be undertaken in more thorough discussions and analysis. <br/><br/>
+The tool also does not consider the tendencies of the customer. For example, if the product is sold to the consumer market then there may be a greater opportunity to sell more sustainable products which could be sold at a premium. These are considerations that should be taken in to account in the workshop where opportunities are prioritised.<br/><br/>
+The Opportunity Assessment Tool offers a simple grading of opportunities. For more in-depth analysis, other tools from the toolkit should be used and feasibility studies conducted in the potential areas. This will give a more accurate view to find the greatest financial benefit within your organisation and the action which you should take.</p><br/><br/>
+
+            </div>
+            
+            <br/>
+            
+            	<div id="tool_image">
+            		<img id="rect1" class="rect" src="images/tool/rect1_grey.png"/>
+               		<img id="rect2" class="rect" src="images/tool/rect2_grey.png"/>
+                    <img id="rect3" class="rect" src="images/tool/rect3_grey.png"/>
+                    
+                    <img id="circle1" class="circle" src="images/tool/circle1_grey.png"/>
+                    <img id="circle2" class="circle" src="images/tool/circle2_grey.png"/>
+                    <img id="circle6" class="circle" src="images/tool/circle6_grey.png"/>
+                    <img id="circle4" class="circle" src="images/tool/circle4_grey.png"/>
+                    <img id="circle3" class="circle" src="images/tool/circle3_grey.png"/>
+                    <img id="circle5" class="circle" src="images/tool/circle5_grey.png"/>
+                    <img id="circle7" class="circle" src="images/tool/circle7_grey.png"/>
+                    <div style="margin-left: 7em;">
+                    <img id="key" class="circle" src="images/tool/key.png"/>
+					</div>
+                </div>
+                
+                <div id="tool_heading">
+                Answer the questions below to find potential improvements in your organisation:
+                </div>
+                
+                <div id="toolHolder">
+                    <div id="toolSpace">
+                        <div id="userInfo">
+                        <form id="assessment" name="assessment" action="#" method="post">
+                            <p>* Company type:&nbsp;&nbsp;&nbsp;
+                            <select id = "companyList" name="companyList" style="font-family:Tahoma, Geneva, sans-serif;">
+                               <option class="listStyle" value = "Manufacturer">Manufacturer</option>
+                               <option class="listStyle" value = "Distributor">Distributor</option>
+                               <option class="listStyle" value = "Retailer">Retailer</option>
+                               <option class="listStyle" value = "Purchaser">Purchaser</option>
+                               <option class="listStyle" value = "Consumer">Consumer</option>
+                            </select>
+                            </p>
+                            <p>* Product type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="productType" name="productType" style="font-family:Tahoma, Geneva, sans-serif;" value = "" /></p>
+                            
+                            <p>* Use:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type = "radio" checked="checked" name="use" id="playing" style="font-family:Tahoma, Geneva, sans-serif;" value="Just playing" />
+                            <label for = "playing">Just playing</label>
+                            
+                            &nbsp;&nbsp;<input type = "radio" name="use" id="serious" style="font-family:Tahoma, Geneva, sans-serif;" value="serious" />
+                            <label for = "serious">Serious</label>
+                            </p>
+                         </div>
+                         <!----------------------- User Info Ends ----------------------->
+                         
+                         
+                         
+                         <div id="questions">
+                            <h4>Design, Manufacture and Distribute</h4>
+                            
+                                    <!--Question 1-->
+                                    <div id="ques1" class="ques">
+                                        <div id="left1" class="ansValues">No material is used in excess, product is totally dematerialised</div>
+                                        <div id="ansSlider1" class="ansSlider">
+                                            <input type="text" id="text0" name="0_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right1" class="ansValues">High waste of material, could be reduced through redesign</div>
+                                    </div>
+                                    
+                                    <!--Question 2-->
+                                    <div id="ques2" class="ques">
+                                        <div id="left2" class="ansValues">100% Biodegradable</div>
+                                        <div id="ansSlider2" class="ansSlider">
+                                            <input type="text" id="text1" name="0_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right2" class="ansValues">High percentage of technical, non-biodegradable materials</div>
+                                    </div>
+                                    
+                                    <!--Question 3-->
+                                    <div id="ques3" class="ques">
+                                        <div id="left3" class="ansValues">100% Recycled materials used</div>
+                                        <div id="ansSlider3" class="ansSlider">
+                                            <input type="text" id="text2" name="0_2" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right3" class="ansValues">High percentage of virgin, non-recycled materials</div>
+                                    </div>
+                                    
+                                    <!--Question 4-->
+                                    <div id="ques4" class="ques">
+                                        <div id="left4" class="ansValues">No scarce materials used in product</div>
+                                        <div id="ansSlider4" class="ansSlider">
+                                            <input type="text" id="text3" name="0_3" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right4" class="ansValues">Scarce materials in product, e.g. Antinomy, Cobalt, Gallium, Geranium, Indium, Platinum, Palladium, Niobium, Neodymium and Tantalum</div>
+                                    </div>
+                                    
+                                    <!--Question 5-->
+                                    <div id="ques5" class="ques">
+                                        <div id="left5" class="ansValues">Materials are highly eco-efficent (low energy and carbon emissions to produce)</div>
+                                        <div id="ansSlider5" class="ansSlider">
+                                            <input type="text" id="text4" name="0_4" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right5" class="ansValues">Materials used have poor eco-efficiency</div>
+                                    </div>
+                                    
+                                    <!--Question 6-->
+                                    <div id="ques6" class="ques">
+                                        <div id="left6" class="ansValues">No toxic materials in product</div>
+                                        <div id="ansSlider6" class="ansSlider">
+                                            <input type="text" id="text5" name="0_5" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right6" class="ansValues">Excess toxic materials in product</div>
+                                    </div>
+                                    
+                                    <!--Question 7-->
+                                    <div id="ques7" class="ques">
+                                        <div id="left7" class="ansValues">Zero waste factory; all waste is used as input to another process/factory</div>
+                                        <div id="ansSlider7" class="ansSlider">
+                                            <input type="text" id="text6" name="0_6" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right7" class="ansValues">Significant waste sent to landfill from factory</div>
+                                    </div>
+                                    
+                                    
+                                    <!---------------- USAGE ----------------->
+                                    <h4>Usage(by the customer)</h4>
+                                    <!--Question 1-->
+                                    <div id="ques8" class="ques">
+                                        <div id="left8" class="ansValues">Product failures rarely occur</div>
+                                        <div id="ansSlider8" class="ansSlider">
+                                            <input type="text" id="text7" name="1_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right8" class="ansValues">Product failures are frequent</div>
+                                    </div>
+                                    
+                                    <!--Question 2-->
+                                    <div id="ques9" class="ques">
+                                        <div id="left9" class="ansValues">Product has a very long lifetime</div>
+                                        <div id="ansSlider9" class="ansSlider">
+                                            <input type="text" id="text8" name="1_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right9" class="ansValues">Product has a short lifetime</div>
+                                    </div>
+                                    
+                                    <!--Question 3-->
+                                    <div id="ques10" class="ques">
+                                        <div id="left10" class="ansValues">Product uses no, or close to theoretical minimum power</div>
+                                        <div id="ansSlider10" class="ansSlider">
+                                            <input type="text" id="text9" name="1_2" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right10" class="ansValues">Product is energy and resource wasteful</div>
+                                    </div>
+                                    
+                                    
+                                    <!---------------- Repair/Maintenance of the product ----------------->                     
+                                    <h4>Repair/Maintenance of the product</h4>
+                                    <!--Question 1-->
+                                    <div id="ques11" class="ques">
+                                        <div id="left11" class="ansValues">Cost of repair far outweighs cost of product</div>
+                                        <div id="ansSlider11" class="ansSlider">
+                                            <input type="text" id="text10" name="2_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right11" class="ansValues">Cost to repair is small in comparison to the product cost</div>
+                                    </div>
+                                    
+                                    <!--Question 2-->
+                                    <div id="ques12" class="ques">
+                                        <div id="left12" class="ansValues">Suitable maintenance/repair service already offered (could include repair, servicing, spare parts, diagnostics, technical support, installation and warranty)</div>
+                                        <div id="ansSlider12" class="ansSlider">
+                                            <input type="text" id="text11" name="2_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right12" class="ansValues">No maintenance/repair service offered</div>
+                                    </div>
+                                    
+                                    <!--Question 3-->
+                                    <div id="ques13" class="ques">
+                                        <div id="left13" class="ansValues">Difficult to get access to internal workings</div>
+                                        <div id="ansSlider13" class="ansSlider">
+                                            <input type="text" id="text12" name="2_2" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right13" class="ansValues">Easy to get access to internal workings</div>
+                                    </div>
+                                    
+                                    <!--Question 4-->
+                                    <div id="ques14" class="ques">
+                                        <div id="left14" class="ansValues">Complex workings, difficult to understand</div>
+                                        <div id="ansSlider14" class="ansSlider">
+                                            <input type="text" id="text13" name="2_3" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right14" class="ansValues">Simple workings, easy to understand</div>
+                                    </div>
+                                    
+                                    <!--Question 5-->
+                                    <div id="ques15" class="ques">
+                                        <div id="left15" class="ansValues">No components, connectors, modules or leads are standardised</div>
+                                        <div id="ansSlider15" class="ansSlider">
+                                            <input type="text" id="text14" name="2_4" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right15" class="ansValues">All components, connectors, modules and leads are standardised</div>
+                                    </div>
+                                    
+                                    <!--Question 6-->
+                                    <div id="ques16" class="ques">
+                                        <div id="left16" class="ansValues">Difficult to find fault</div>
+                                        <div id="ansSlider16" class="ansSlider">
+                                            <input type="text" id="text15" name="2_5" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right16" class="ansValues">Easy to find fault</div>
+                                    </div>
+                                    
+                                    
+                                    <!--------------- Reuse/Redistribution of the product ---------------->
+                                    <h4>Reuse/Redistribution of the product</h4>
+                                    <!--Question 1-->
+                                    <div id="ques17" class="ques">
+                                        <div id="left17" class="ansValues">No market for second hand sales</div>
+                                        <div id="ansSlider17" class="ansSlider">
+                                            <input type="text" id="text16" name="3_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right17" class="ansValues">Good market for second hand sales</div>
+                                    </div>
+                                                      
+                                    <!--Question 2-->
+                                    <div id="ques18" class="ques">
+                                        <div id="left18" class="ansValues">Comprehensive second hand sales already offered</div>
+                                        <div id="ansSlider18" class="ansSlider">
+                                            <input type="text" id="text17" name="3_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right18" class="ansValues">No second hand sales offered currently</div>
+                                    </div>
+                                    
+                                    <!--Question 3-->
+                                    <div id="ques19" class="ques">
+                                        <div id="left19" class="ansValues">Product has a very long lifetime</div>
+                                        <div id="ansSlider19" class="ansSlider">
+                                            <input type="text" id="text18" name="3_2" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right19" class="ansValues">Product has a short lifetime</div>
+                                    </div>
+                                    
+                                    
+                                    <!----------------- Remanufacturing/ Refurbishment of product or part ---------------->
+                                    <h4>Remanufacturing/ Refurbishment of product or part</h4>
+                                    <!--Question 1-->
+                                    <div id="ques20" class="ques">
+                                        <div id="left20" class="ansValues">Expensive refurbishment/ remanufacturing costs</div>
+                                        <div id="ansSlider20" class="ansSlider">
+                                            <input type="text" id="text19" name="4_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right20" class="ansValues">Cheap refurbishment/ remanufacturing costs</div>
+                                    </div>
+                                    
+                                    <!--Question 2-->
+                                    <div id="ques21" class="ques">
+                                        <div id="left21" class="ansValues">Expensive collection costs to return product to factory</div>
+                                        <div id="ansSlider21" class="ansSlider">
+                                            <input type="text" id="text20" name="4_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right21" class="ansValues">Cheap collection costs to return product to factory</div>
+                                    </div>
+                                    
+                                    <!--Question 3-->
+                                    <div id="ques22" class="ques">
+                                        <div id="left22" class="ansValues">All products are returned and refurbished/remanufactured</div>
+                                        <div id="ansSlider22" class="ansSlider">
+                                            <input type="text" id="text21" name="4_2" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right22" class="ansValues">No refurbishing or remanufacturing currently undertaken</div>
+                                    </div>
+                                    
+                                    <!--Question 4-->
+                                    <div id="ques23" class="ques">
+                                        <div id="left23" class="ansValues">Difficult to disassemble</div>
+                                        <div id="ansSlider23" class="ansSlider">
+                                            <input type="text" id="text22" name="4_3" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right23" class="ansValues">Easy to disassemble</div>
+                                    </div>
+                                    
+                                    <!--Question 5-->
+                                    <div id="ques24" class="ques">
+                                        <div id="left24" class="ansValues">Significant damage caused to product or part when disassembling</div>
+                                        <div id="ansSlider24" class="ansSlider">
+                                            <input type="text" id="text23" name="4_4" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right24" class="ansValues">No damage caused to product or part when disassembling</div>
+                                    </div>
+                                    
+                                    <!--Question 6-->
+                                    <div id="ques25" class="ques">
+                                        <div id="left25" class="ansValues">Impossible to identify parts once disassembled</div>
+                                        <div id="ansSlider25" class="ansSlider">
+                                            <input type="text" id="text24" name="4_5" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right25" class="ansValues">Easy to identify parts once disassembled</div>
+                                    </div>
+                                    
+                                    <!--Question 7-->
+                                    <div id="ques26" class="ques">
+                                        <div id="left26" class="ansValues">No parts are modular, preventing switch in-switch out</div>
+                                        <div id="ansSlider26" class="ansSlider">
+                                            <input type="text" id="text25" name="4_6" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right26" class="ansValues">Many parts are modular, allowing switch in-switch out</div>
+                                    </div>
+                                    
+                                    <!--Question 8-->
+                                    <div id="ques27" class="ques">
+                                        <div id="left27" class="ansValues">Impossible to upgrade parts</div>
+                                        <div id="ansSlider27" class="ansSlider">
+                                            <input type="text" id="text26" name="4_7" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right27" class="ansValues">Possible to upgrade to parts</div>
+                                    </div>
+                                    
+                                    <!--Question 9-->
+                                    <div id="ques28" class="ques">
+                                        <div id="left28" class="ansValues">Many mechanical connections, e.g. welds, screws, rivets, etc.</div>
+                                        <div id="ansSlider28" class="ansSlider">
+                                            <input type="text" id="text27" name="4_8" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right28" class="ansValues">Few mechanical connections</div>
+                                    </div>
+                                    
+                                    <!--Question 10-->
+                                    <div id="ques29" class="ques">
+                                        <div id="left29" class="ansValues">Many tools required to disassemble</div>
+                                        <div id="ansSlider29" class="ansSlider">
+                                            <input type="text" id="text28" name="4_9" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right29" class="ansValues">Few tools required to disassemble</div>
+                                    </div>
+            
+            
+                                    <!----------------- Products as a Service ---------------->
+                                    <h4>Products as a Service</h4>
+                                    <!--Question 1-->
+                                    <div id="ques30" class="ques">
+                                        <div id="left30" class="ansValues">No market to sell products as a service</div>
+                                        <div id="ansSlider30" class="ansSlider">
+                                            <input type="text" id="text29" name="5_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right30" class="ansValues">Good market to sell products as a service</div>
+                                    </div>
+                
+                                    <!--Question 2-->
+                                    <div id="ques31" class="ques">
+                                        <div id="left31" class="ansValues">All products already sold as a service</div>
+                                        <div id="ansSlider31" class="ansSlider">
+                                            <input type="text" id="text30" name="5_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right31" class="ansValues">No products currently sold as a service</div>
+                                    </div>
+                                    
+                                    
+                                    <!----------------- Product Recycling at end of life ---------------->
+                                    <h4>Product Recycling at end of life</h4>
+                                    <!--Question 1-->
+                                    <div id="ques32" class="ques">
+                                        <div id="left32" class="ansValues">Few material combinations used in the product</div>
+                                        <div id="ansSlider32" class="ansSlider">
+                                            <input type="text" id="text31" name="6_0" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right32" class="ansValues">High number of material combinations used in the product</div>
+                                    </div>
+                                    
+                                    <!--Question 2-->
+                                    <div id="ques33" class="ques">
+                                        <div id="left33" class="ansValues">No encased materials(e.g. if materials are easy to separate at recycling)</div>
+                                        <div id="ansSlider33" class="ansSlider">
+                                            <input type="text" id="text32" name="6_1" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true">
+                                        </div>
+                                        <div id="right33" class="ansValues">Many encased materials</div>
+                                    </div>
+                            </form>
+                            
+                            <script type='text/javascript'>
+                            alignSliders()
+                            activateSlider()
+                            </script>
+                           
+                                   <!----------------------- Warning ----------------------->
+                                    <p id="warning"></p>
+                         
+                                   <!--Submit button-->
+                                   <button type="button" class="submit" id="submit_btn" onclick="checkAns()">Submit</button>
+								   <p>
+								   <font color = "black">*Data will be collected for research purposes, no specific company details will be shared </font color>
+                                   </p>
+								   <!-- Further info button -->
+                                   <a id="furth_info_btn" class="button modalbox" href="#inline_info"><font color = "#009FE3">Further Information on the Assessment Tool and Calculation</font color></a>
+								   
+								   
+                                     
+                                   <!--Email the results button-->
+                                   <a id="email_btn" class="button modalbox" href="#inline"><center><font color = "black">E-mail me the Results<font color></center></a>
+                         </div>
+                         
+    <!----------------------- Questions End ----------------------->
+                        
+						
+				
+                    </div>
+                 </div>
+            </div>   				
+		</div>
+	</section>
+	
+						
+	
+</div>
+
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+   <script type="text/javascript">
+	T$('testclick1').onclick = function(){TINY.box.show('advanced.html',1,300,150,1)}
+	T$('testclick2').onclick = function(){TINY.box.show('case.html',1,300,250,1)}
+
+	/*var content2 = "<img src='images/rhino.jpg' width='298' height='373' alt='' />";
+	T$('testclick2').onclick = function(){TINY.box.show(content2,0,0,0,1)}
+	var content3 = "This will disappear in 3 seconds.";
+	T$('testclick3').onclick = function(){TINY.box.show(content3,0,0,0,0,3)}*/
+</script>
+</body>
+
+<!-- Mirrored from circulareconomytoolkit.org/Assessmenttool.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:33:40 GMT -->
+</html>

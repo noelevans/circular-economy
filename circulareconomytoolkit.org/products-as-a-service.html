@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/products-as-a-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:34:12 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Circular Economy Toolkit</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+	<meta name="keywords" content="Circular economy strategy opportunities workshop Cradle-to-cradle toolkit Circular Economy sustainability workshop design energy sustainability toolkit sustainability opportunities scarce materials benefit remanufacture refurbishment reuse recycling products as a service manufacture maintain repair robustness lifetime" />
+	<meta name="description" content="The Circular Economy Toolkit is a free resource for businesses to find opportunities in the Circular Economy" />
+     <link rel="stylesheet" type="text/css" href="css/style.css" />
+     <link rel="stylesheet" type="text/css" media="all" href="css/styleq.css">
+     <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="jquery-ui.css" />
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+	<script src="js/jcarousellite_1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+	  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
+  <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e) { e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });        
+    </script>
+	
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-42799978-1', 'circulareconomytoolkit.com');
+			ga('send', 'pageview');
+
+</script>
+	
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+        
+		
+		<a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+		
+		
+		
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a style="color:#009FE3" href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a  href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+        </br>
+				
+		</ul>
+		<hr width="100%" size="2" noshade="" style="float:left;">
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content">
+               <br/>
+               <div id="inline">
+	<form id="contact" name="contact" action="#" method="post">
+		<fieldset>
+		<legend>Please complete the following form</legend>
+		<label for="cname"><span class="required">*</span> Company Name</label>
+		<input name="cname" type="text" id="cname" class="txt" />
+        
+        <label for="comments"><span class="required">*</span>What have they done? &nbsp;&nbsp;Remaining <span id="count"></span> characters</label>
+		<textarea name="msg" id="msg"></textarea>
+        
+        <label for="weblink"><span class="required">*</span>Enter Website link</label>
+		<input name="wlink" type="text" id="wlink" class="txt" />
+        
+		<label for="email"><span class="required">*</span> Email</label>
+		<input name="email" type="email" id="email" class="txt" />
+
+		<br />
+		<script type="text/javascript">
+	var maxchar = 250;
+		var i = document.getElementById("msg");
+		var c = document.getElementById("count");
+		c.innerHTML = maxchar;
+			
+		i.addEventListener("keydown",count);
+		
+		function count(e){
+			var len =  i.value.length;
+			if (len >= maxchar){
+			   e.preventDefault();
+			} else{
+			   c.innerHTML = maxchar - len-1;   
+			}
+		}
+	</script>
+
+		<button id="send" class="button">Send E-mail</button>
+		</fieldset>
+	</form>
+</div>
+               <!-- form>
+                    <div id="radio">
+                        <input type="radio" id="radio1" value="one"   name="radioGroup" checked/><label for="radio1">Maintanence</label>
+                        <input type="radio" id="radio2" value="two"   name="radioGroup" /><label for="radio2">Spare parts</label>
+                        <input type="radio" id="radio3" value="three" name="radioGroup" /><label for="radio3">Any old iron</label>
+                    </div>
+                </form -->
+                <div id="accordion">
+                    <h3><a href="#"><strong>Introduction - Products as a Service</strong></a></h3>
+                    <div>
+                        <p>
+                            Instead of conventionally selling products, it’s possible to offer the product as a service. The product is taken by the 
+							customer and they pay for the time or usage of it, for either a short or long contract period. The provider typically has 
+							ownership of the product throughout the entire lifecycle and can manage the product through design, usage, maintenance, 
+							reuse, remanufacture and recycling. This business model can allow closer relations with the customer, enhanced product 
+							development from closer feedback loops, provide greater business value to both parties and improve customer satisfaction. 
+							</br>
+							</br>
+							The types of product service systems include:
+							<div style="margin-left: 3em;">
+							<ul>
+							<li><span style='font-weight: bold;'>Pay per service unit</span> The customer pays each time they use the service. The provider
+							is responsible for all life cycle costs so is incentivised to design a product which is optimised for usage, maintenance, reuse 
+							of parts or product, remanufacture and recycling. An example is office printers where the number of pages printed are charged,
+							with the paper, ink and servicing included in the contract price, whilst the manufacturer provides a working machine and the 
+							consumables to go with it.</li>
+							</br>
+							<li><span style='font-weight: bold;'>Product renting or sharing</span> The customer pays to access the product for a certain period 
+							and other customers sequentially use the product. Typical examples are for car and excavating equipment rental. The product is 
+							provided, controlled and maintained by the provider. </li>
+							</br>				
+							<li><span style='font-weight: bold;'>Product Lease</span> Ownership is still retained by the provider, but the customer has continuous 
+							access to the product. The provider typically controls, maintains and collects the product at the end of the leasing agreement. 
+							Examples are found with car, laptop and machinery leasing.</li>
+							</br>							
+							<li><span style='font-weight: bold;'>Product pooling</span> This is when the product is simultaneously used by many customers. A typical 
+							example is car-pooling where multiple people use the product at the same time.</li>
+							
+							</div>
+							
+							</ul>
+							
+							<p>
+							<div align="right">							
+							(Tukker, 2004)
+							</div>
+							</p>
+							
+							
+							
+                        </p>
+                       
+                    </div>
+                    <h3><a href="#">Benefits</a></h3>
+                    <div>
+                        <p>
+						<div style="margin-left: 3em;">
+                            <ul>
+							<li>Fulfil client needs in an integrated and customised way, allowing clients to concentrate on their core activities</li>
+							<li>Removes hassle for the customer</li>
+							<li>Can build unique relationships with clients, enhancing customer loyalty</li>
+							<li>Can innovate faster since being closer to client and understanding their needs better </li>
+							<li>Lower barriers for the customer to purchase the service as they do not acquire the potentially expensive equipment </li>
+							<li>Reduced volume of raw materials</li>
+							<li>Reduced energy usage</li>
+							<li>Reduced waste generation</li>
+							</ul>
+                        </div>
+							<div align = "right"> (Tukker, 2004) </div>
+							
+						</p>
+                    </div>
+                    <h3><a href="#">Considerations</a></h3>
+                    <div>
+                        <p>
+						
+						<table border="3">
+						<tr>
+						<td><center><span style='font-weight: bold;'>Consideration</span></center></td>
+						<td><center><span style='font-weight: bold;'>Challenge</span></center></td>
+						<td><center><span style='font-weight: bold;'>Opportunity</span></center></td>
+						</tr>
+						<tr>
+						<td>Quality of product</td>
+						<td>Quality products require continuous investment which can then become damaged.</td>
+						<td>High quality products improve customer satisfaction. Controls and penalties can protect the product.</td>
+						</tr>
+						<tr>
+						<td>Customer service</td>
+						<td>Customers desire a convenient service with minimum hassle and simple payment terms.</td>
+						<td>Excellent customer service and satisfaction can bring repeat business.</td>
+						</tr>
+						<tr>
+						<td>Competition</td>
+						<td>Many competitors can offer similar services.</td>
+						<td>Customer satisfaction and delivering what the customer requires can beat the competition.</td>
+						</tr>
+						<tr>
+						<td>Value to the customer</td>
+						<td>The customer requires a service that is within their budget whilst delivering the service required.</td>
+						<td>Providing good value for money and reducing the up-front payment by the customer improves customer satisfaction.</td>
+						</tr>
+						<tr>
+						<td>Risk of service not delivering to the specified agreement</td>
+						<td>Taking on risk that was previously the customer’s.</td>
+						<td>Likelihood of service delivery failure can be calculated and premiums used to cover the risk.</td>
+						</tr>
+						<tr>
+						<td>Upfront investment required to retain ownership of product</td>
+						<td>Potentially large investment required to keep ownership of products.</td>
+						<td>Loans can be used to cover the cost, providing risks are calculated and managed.</td>
+						</tr>
+						<tr>
+						<td>Different aspects of the supply chain need to be managed</td>
+						<td>New aspects of the supply chain will need to be managed which may not be already.</td>
+						<td>Greater value opportunity and potential to work closer with the client across their supply chain.</td>
+						</tr>
+						<tr>
+						<td>People skills and organisation change required for the service</td>
+						<td>Investment needed to support the new service and transition phase.</td>
+						<td>Long term benefits of the investment and change should be considered.</td>
+						</tr>
+						<tr>
+						<td>How the service could be implemented, "big bang" vs gradual</td>
+						<td>The wrong approach could reduce the success of the implementation.</td>
+						<td>A gradual approach to implementation has shown to be successful and the long-term benefits of the new service could be high.</td>
+						</tr>
+					
+					
+					
+						</table>
+						
+						</p>
+						
+						
+                    </div>
+                    <h3><a href="#">Product Design</a></h3>
+                    <div>
+                        <p>
+                            As ownership of the product lies with the manufacturer/provider, the product should support the entire 
+							lifecycle to ensure the maximum value is captured:
+							
+							
+							<table border="3">
+										
+							<tr>
+							<td><center><span style='font-weight: bold;'>Usage</span></center></td>
+							<td><center><span style='font-weight: bold;'>Maintain/Repair</span></center></td>
+							<td><center><span style='font-weight: bold;'>Refurb/Reman</span></center></td>
+							<td><center><span style='font-weight: bold;'>Recycle</span></center></td>
+							</tr>
+							<tr>
+							<td>Energy and resource efficient</td>
+							<td>Easy access to parts</td>
+							<td>Ease of disassembly</td>
+							<td>Minimising the volume of waste </td>
+							</tr>
+							
+							<tr>
+							<td>Reliability</td>
+							<td>Fault diagnostics</td>
+							<td>Number of connections</td>
+							<td>Reducing the spectrum of materials </td>
+							</tr>
+							
+							<tr>
+							<td>Availability</td>
+							<td>Handling and mounting of parts</td>
+							<td>Tools required to disassemble</td>
+							<td>Use recyclable materials </td>
+							</tr>
+							
+							<tr>
+							<td>Maintainability</td>
+							<td>Part inter-changeability</td>
+							<td>Damage caused when disassembling</td>
+							<td>Disassembly of incompatible material combinations  </td>
+							</tr>
+							
+							<tr>
+							<td>Quality</td>
+							<td>Identification of components and leads</td>
+							<td>Ease of re-assembly</td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<td>Safety </td>
+							<td>Access to lubrication points</td>
+							<td>Ease of identification</td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<<td><center>-</center></td>
+							<td>Reduced electrical connections</td>
+							<td>Potential to Upgrade</td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<td><center>-</center></td>
+							<td>Redundancy features</td>
+							<td>Part modularity</td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<td><center>-</center></td>
+							<td>Final adjustments</td>
+							<td><center>-</center></td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<td><center>-</center></td>
+							<td>Safety for mechanics</td>
+							<td><center>-</center></td>
+							<td><center>-</center></td>
+							</tr>
+							
+							<tr>
+							<td>(Fernandez, 2001)</td>
+							<td>(Smith and Babb, 1973)</td>
+							<td>(Ijomah et al, 2007)</td>
+							<td>(Jansen and Krause 1996)</td>
+							</tr>
+							
+							
+							</table>
+							
+                        </p>
+                    </div>
+                    <h3><a href="#">Case studies</a></h3>
+                    <div id="slideshow">
+                <div id="nav_left">
+                <img src="images/left_arrow.png" alt="Left" title="Click Here" />
+                </div>
+                <div id="main-slider">
+                    <ul>
+                        <li>
+                        <img src="images/slideshow/desso.jpg" alt="Graphic Design" align="left" title="Graphic Design" width = "80" height = "80"/>
+                        <span>
+                        
+                       
+                        <p><strong>Desso</strong> supply carpets to commercial customers. Instead of conventionally selling their product, they lease their carpet to users, retaining ownership of the product. At the end of the useful life, the carpet is collected and 100% recycled in to new carpet which is leased again. 
+							<a target="_blank" href="http://www.desso.com/about-desso/business-concept/">Link</a></p>
+                        
+                        
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/rollsroyce.jpg" alt="Graphic Design" align="left" title="Graphic Design" width = "80" height = "120" />
+                        <span>
+                        
+                        <p><strong>Rolls Royce</strong> provide “power by the hour”, which charges customers for the time the jet engines are being used. Maintenance, reuse and recycling of product is performed, whilst getting maximum value out of the entire life cycle of the engines. The engines are also fitted with sensors to allow guidance on when maintenance is required.
+							<a target="_blank" href="http://www.youtube.com/watch?v=B5X8KFbN0fw">Video (10mins)</a></p>
+                        
+                        </span>
+                        </li>
+                        
+                       <!-- <li>
+                        <img src="images/slideshow/image5.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a class="readmore" href="#">Read more</a></p>
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/image4.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s... <a class="readmore" href="#">Read more</a></p>
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/image3.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.. <a class="readmore" href="#">Read more</a></p>
+                        
+                        </span>
+                        </li>-->
+                        
+                        
+                    </ul>
+                </div>    
+                <div id="nav_right">
+                <img src="images/right_arrow.png" alt="Right" title="Click Here"/>
+                </div>
+            </div>
+                </div>
+                        <a class="button modalbox" href="#inline"><font color = "white"> Add your own case study<font color></a></p>
+
+			</div>
+		</div>
+		<aside id="sideLeft">
+            <p>&nbsp;</p>
+            <img src="images/Circ7.png" usemap="#sb21186" width="352" height="383" alt="click map" border="0" class="map"/>
+            <map id="sb21186" name="sb21186">
+                <area shape="circle" id="squid1" alt="some_text_1" coords="179,56,45"  href="design-manufacture-distribute.html" data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Design, Manufacture and Distribute"/>	
+                <area shape="circle" id="squid2" alt="some_text_2" coords="295,125,45" href="usage.html"                         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Usage"/>	
+                <area shape="circle" id="squid3" alt="some_text_3" coords="293,261,45" href="maintain-repair.html"               data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Maintain / Repair"/>	
+                <area shape="circle" id="squid4" alt="some_text_4" coords="175,326,45" href="reuse-redistribute.html"            data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Reuse / Redistribute"/>	
+                <area shape="circle" id="squid5" alt="some_text_5" coords="59,257,45"  href="refurbish-remanufacture.html"       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Refurbish / Remanufacture"/>	
+                <area shape="circle" id="squid6" alt="some_text_6" coords="61,122,45"  href="recycle.html"                       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Recycle"/>	
+                <area shape="circle" id="squid7" alt="some_text_7" coords="177,192,56" href="products-as-a-service.html"         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Products as a Service"/>	
+				<area shape="rectangle" id="squid7" alt="some_text_7" coords="1,1,52,50" href="tools.html" 						 data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Tools"/>
+							
+			</map>
+		</aside>
+	</section>
+</div>
+<p>&nbsp;</p>
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+</body>
+
+<!-- Mirrored from circulareconomytoolkit.org/products-as-a-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:34:16 GMT -->
+</html>

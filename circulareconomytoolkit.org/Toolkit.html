@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/Toolkit.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:32:50 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Circular Economy Toolkit</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.maphilight.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    
+	<meta name= "keywords" content="Circular economy strategy opportunities workshop Cradle-to-cradle toolkit Circular Economy sustainability workshop design energy sustainability toolkit sustainability opportunities scarce materials benefit remanufacture refurbishment reuse recycling products as a service manufacture maintain repair robustness lifetime" />
+	<meta name= "description" content="The Circular Economy Toolkit is a free resource for businesses to find opportunities in the Circular Economy" />
+    <script type="text/javascript" src="cycle.js"></script>
+    <script type="text/javascript" src="tinybox.js"></script>
+    <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e){ e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });
+    </script>
+      <script type="text/javascript">
+	$(document).ready(function(){
+			$('.slider_wraper').cycle({
+					startingSlide:    0, 
+				fx:     'scrollHorz', 
+				speed:  1000, 
+				next:   '#next',
+				prev:'#previous',
+				preview: '#preview',
+				timeout: 5000,
+				slideExpr:"div.slider",
+				pager: ".pager",
+				auto:  'true',
+				
+			
+				
+			});	
+				$('.slider_wraper').cycle('pause');
+					$('#next').click (function(){
+						$('.slider_wraper').cycle('resume')
+					})
+					
+				
+	});
+</script>
+   
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-42799978-1', 'circulareconomytoolkit.com');
+			ga('send', 'pageview');
+
+</script>
+   
+   
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+        
+		<a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+        
+		
+		<ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a style="color:#009FE3" href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a  href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+			</br>
+				
+		</ul>
+		<hr width="100%" size="2" noshade="" style="float:left;">
+	
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content">
+               <br/>
+               <!-- form>
+                    <div id="radio">
+                        <input type="radio" id="radio1" value="one"   name="radioGroup" checked/><label for="radio1">Maintanence</label>
+                        <input type="radio" id="radio2" value="two"   name="radioGroup" /><label for="radio2">Spare parts</label>
+                        <input type="radio" id="radio3" value="three" name="radioGroup" /><label for="radio3">Any old iron</label>
+                    </div>
+                </form -->
+                With the vast number of possibilities for creating value out of the Circular Economy and cradle-to-cradle thinking, it can be 
+				challenging to assess all the options. The Circular Economy Toolkit has consolidated all the opportunities and provided information on how
+				your company could start finding benefits. Read through the toolkit, complete the 5 minute opportunity assessment tool and run your own 
+				workshop to start creating more valuable and sustainable products and services.
+				</br>
+				</br>
+				Click on the circles to the left to learn about the different opportunities available...
+				</br>
+				<div id="accordion" style="margin-top: 25px;">
+				<h3><a href="#">What does this mean for <span style='font-weight: bold;'> Manufacturers</span>?</a></h3>
+                    <div>
+                        <p>
+							Manufacturers have a very important role to play. Manufacturers can ensure products are designed and manufactured with minimal 
+							impact to the environment throughout the product’s life cycle. Manufacturers also have the opportunity to offer additional 
+							value-added services like repair/maintenance, reuse/redistribution, refurbishment/remanufacture and selling products as a service.
+							Find out how other manufacturers are creating value from circular products in the case studies.
+						</p>
+					</div>
+					
+				<h3><a href="#">What does this mean for <span style='font-weight: bold;'>Retailers/Distributors</span>?</a></h3>
+                    <div>
+                        <p>
+							Product retailers and distributors have the opportunity to sell the best products initially 
+							and also deliver added-value services like repair/maintenance, reuse/redistribution, refurbishment/remanufacture 
+							and selling products as a service. This means a closer relationship with the customer and potential opportunity at every lifecycle 
+							of the product.
+						</p>
+					</div>
+				
+                <h3><a href="#">What does this mean for <span style='font-weight: bold;'> Consumers/Purchasers</span>?</a></h3>
+                    <div>
+                        <p>
+							If you purchase products as a consumer or in a business, you have control over what you buy. Improving your understanding of 
+							'circular products' by considering the entire life cycle will allow you to make better purchasing decisions, give you a better 
+							idea of how to use and maintain the product and what the best end of life strategy is once you are finished with it.
+						</p>	
+					</div>				
+				
+                </div>
+				</br>
+				</br>
+			</div>
+		</div>
+		<aside id="sideLeft">
+            <p>&nbsp;</p>
+            
+            <img src="images/AllSixOrg.png" usemap="#sb21186" width="352" height="383" alt="click map" border="0" class="map"/>
+            <map id="sb21186" name="sb21186">
+                <area shape="circle" id="squid1" alt="some_text_1" coords="179,56,45"  href="design-manufacture-distribute.html" data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Design, Manufacture and Distribute"/>	
+                <area shape="circle" id="squid2" alt="some_text_2" coords="295,125,45" href="usage.html"                         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Usage"/>	
+                <area shape="circle" id="squid3" alt="some_text_3" coords="293,261,45" href="maintain-repair.html"               data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Maintain / Repair"/>	
+                <area shape="circle" id="squid4" alt="some_text_4" coords="175,326,45" href="reuse-redistribute.html"            data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Reuse / Redistribute"/>	
+                <area shape="circle" id="squid5" alt="some_text_5" coords="59,257,45"  href="refurbish-remanufacture.html"       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Refurbish / Remanufacture"/>	
+                <area shape="circle" id="squid6" alt="some_text_6" coords="61,122,45"  href="recycle.html"                       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Recycle"/>	
+                <area shape="circle" id="squid7" alt="some_text_7" coords="177,192,56" href="products-as-a-service.html"         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Products as a Service"/>	
+				<area shape="rectangle" id="squid7" alt="some_text_7" coords="1,1,52,50" href="tools.html" 						 data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Tools"/>
+			</map>
+			</br>
+			</br>
+		</aside>
+	</section>
+</div>
+
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+   <script type="text/javascript">
+	T$('testclick1').onclick = function(){TINY.box.show('advanced.html',1,300,150,1)}
+	T$('testclick2').onclick = function(){TINY.box.show('case.html',1,300,250,1)}
+
+	/*var content2 = "<img src='images/rhino.jpg' width='298' height='373' alt='' />";
+	T$('testclick2').onclick = function(){TINY.box.show(content2,0,0,0,1)}
+	var content3 = "This will disappear in 3 seconds.";
+	T$('testclick3').onclick = function(){TINY.box.show(content3,0,0,0,0,3)}*/
+</script>
+</body>
+
+<!-- Mirrored from circulareconomytoolkit.org/Toolkit.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:33:10 GMT -->
+</html>

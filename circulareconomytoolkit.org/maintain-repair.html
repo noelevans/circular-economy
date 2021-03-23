@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from circulareconomytoolkit.org/maintain-repair.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:35:04 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Circular Economy Toolkit</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+	<meta name="keywords" content="Circular economy strategy opportunities workshop Cradle-to-cradle toolkit Circular Economy sustainability workshop design energy sustainability toolkit sustainability opportunities scarce materials benefit remanufacture refurbishment reuse recycling products as a service manufacture maintain repair robustness lifetime" />
+	<meta name="description" content="The Circular Economy Toolkit is a free resource for businesses to find opportunities in the Circular Economy" />
+     <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" media="all" href="css/styleq.css">
+	<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+
+    <link rel="stylesheet" href="jquery-ui.css" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+	<script src="js/jcarousellite_1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+	  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+      <script type="text/javascript" src="cycle.js"></script>
+          <script type="text/javascript">
+	$(document).ready(function(){
+			$('.slider_wraper').cycle({
+					startingSlide:    0, 
+				fx:     'scrollHorz', 
+				speed:  1000, 
+				next:   '#next',
+				prev:'#previous',
+				preview: '#preview',
+				timeout: 5000,
+				slideExpr:"div.slider",
+				pager: ".pager",
+				auto:  'true',
+				
+			
+				
+			});	
+				$('.slider_wraper').cycle('pause');
+					$('#next').click (function(){
+						$('.slider_wraper').cycle('resume')
+					})
+					
+				
+	});
+</script>
+    <script type='text/javascript'>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+        $(function() {
+            $("#radio").buttonset();
+        });
+        $(function() {
+            $('.map').maphilight();
+            $('#squid1link').mouseover(function(e) {
+                $('#squid1').mouseover();
+            }).mouseout(function(e) {
+                $('#squid1').mouseout();
+            }).click(function(e) { e.preventDefault(); });
+        });
+        $(document).ready(function () {
+            $('input[name=radioGroup]:radio').click(function() {
+                var value = $(this).val();
+                if (value == "two"){
+                    $('#other-accordion').show();
+                    $('#accordion').hide();
+                    $('#accordion').attr("id","newId");
+                    $('#other-accordion').attr("id","accordion");
+                    $('#newId').attr("id","other-accordion");
+                } else {
+                    $('#other-accordion').hide();
+                    $('#accordion').show();
+                }
+            });
+        });        
+    </script>
+	
+	
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-42799978-1', 'circulareconomytoolkit.com');
+			ga('send', 'pageview');
+
+</script>	
+
+	
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+	
+	
+	
+        <a href="index-2.html"><img src="images/Logo2.png" alt="Logo Design"  width="450" height="105"></a>
+		<br/>
+		
+		
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="introduction.html">The Circular Economy</a></li>
+			<li>|</li>
+            <li><a style="color:#009FE3" href="Toolkit.html">Toolkit</a></li>
+			<li>|</li>
+            <li><a href="Assessmenttool.html">Assessment Tool</a></li>
+            <li>|</li>
+            <li><a  href="Workshops.html">Workshops</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+			</br>
+				
+		</ul>
+		<hr width="100%" size="2" noshade="" style="float:left;">
+	</header>
+	<section id="middle">
+		<div id="container">
+			<div id="content">
+               <br/>
+               <div id="inline">
+	<form id="contact" name="contact" action="#" method="post">
+		<fieldset>
+		<legend>Please complete the following form</legend>
+		<label for="cname"><span class="required">*</span> Company Name</label>
+		<input name="cname" type="text" id="cname" class="txt" />
+        
+        <label for="comments"><span class="required">*</span>What have they done? &nbsp;&nbsp;Remaining <span id="count"></span> characters</label>
+		<textarea name="msg" id="msg"></textarea>
+        
+        <label for="weblink"><span class="required">*</span>Enter Website link</label>
+		<input name="wlink" type="text" id="wlink" class="txt" />
+        
+		<label for="email"><span class="required">*</span> Email</label>
+		<input name="email" type="email" id="email" class="txt" />
+
+		<br />
+		<script type="text/javascript">
+	var maxchar = 250;
+		var i = document.getElementById("msg");
+		var c = document.getElementById("count");
+		c.innerHTML = maxchar;
+			
+		i.addEventListener("keydown",count);
+		
+		function count(e){
+			var len =  i.value.length;
+			if (len >= maxchar){
+			   e.preventDefault();
+			} else{
+			   c.innerHTML = maxchar - len-1;   
+			}
+		}
+	</script>
+
+		<button id="send" class="button">Send E-mail</button>
+		</fieldset>
+	</form>
+</div>
+               <!-- form>
+                    <div id="radio">
+                        <input type="radio" id="radio1" value="one"   name="radioGroup" checked/><label for="radio1">Maintanence</label>
+                        <input type="radio" id="radio2" value="two"   name="radioGroup" /><label for="radio2">Spare parts</label>
+                        <input type="radio" id="radio3" value="three" name="radioGroup" /><label for="radio3">Any old iron</label>
+                    </div>
+                </form -->
+				<div id="accordion">
+                    <h3><a href="#"><strong>Introduction - Maintain/Repair</strong></a></h3>
+                    <div>
+                        <p>
+                            Maintenance is a critical activity carried out in the use phase of the product life cycle to prolong system availability. 
+							Maintenance is the most efficient way to retain or restore equipment to its desired level of performance. Proper maintenance
+							has the added responsibility of protecting the equipment from further damage, personal safety and pollution prevention 
+							(Ajukumar, Gandhi 2007). 
+							<br/>
+							<br/>
+							During the product life-cycle, after-sales services and spare parts may generate more than three times the turnover of the 
+							original purchase (Wise and Baumgartner, 1999). The change is in favour of a view that considers after-sales as a source of 
+							competitive advantage and business opportunity (Armistead and Clarke 1992).
+							<br/>
+							<br/>
+							Maintenance offerings can include:
+							
+							<div style="margin-left: 3em;">
+							<ul>
+								<li>Repairs</li>
+								<li>Servicing</li>
+								<li>Diagnostics – onsite and remote</li>
+								<li>Technical support – documentation and personal</li>
+								<li>Installation</li>
+								<li>Warranty</li>
+								<li>Courtesy replacement product whilst product is being repaired</li>
+								<li>Cleaning/Valeting</li>
+							<ul/>
+							</div>
+							
+                        </p>
+                       
+                    </div>
+                    <h3><a href="#">Benefits</a></h3>
+                    <div>
+                        <p>
+								<div style="margin-left: 3em;">
+								<ul>
+									<li>Prolongs lifetime of product for the customer </li>
+									<li>Most efficient way to retain or restore the system back to normal working conditions (Ajukumar and Gandhi, 2012)</li>
+									<li>Source of competitive advantage and business opportunity  (Armistead and Clarke 1992)</li>
+									<li>May generate more than three times the turnover of the original purchase (Wise and Baumgartner, 1999)</li>
+									<li>Provides protection, pollution prevention, personnel safety and waste disposal (Ajukumar and Gandhi, 2012)</li>
+								</ul>
+								</div>
+                        </p>
+                    </div>
+                    <h3><a href="#">Considerations</a></h3>
+                    <div>
+					
+					<p>
+					
+                        <table border="3">
+							<tr>
+								<td><center><span style='font-weight: bold;'>Consideration</span></center></td>
+								<td><center><span style='font-weight: bold;'>Challenge</span></center></td>
+								<td><center><span style='font-weight: bold;'>Opportunity</span></center></td>
+							</tr>
+							<tr>
+								<td>Customer Satisfaction</td>
+								<td>Customer can have high expectations, especially when their equipment is not functioning and requires fixing quickly at an affordable price. </td>
+								<td>Delivering excellent customer service can improve customer loyalty and lead to repeat business. Customer ‘delighters’ include quick and high 
+								quality repairs, fixed pricing and offering a courtesy product replacement. </td>
+							</tr>
+							<tr>
+								<td>Competition</td>
+								<td>Competition can reduce the volume of customers and reduce margins. </td>
+								<td>Good reputation provides customer loyalty through delivering a quality service and improves the brand image. Offers can provide competitiveness 
+								and up-to-date technology can be a differentiator. </td>
+							</tr>
+							<tr>
+								<td>Quality of repair</td>
+								<td>Poor repair quality can lead to breakdown of customer’s equipment, damaged reputation and poor sales. </td>
+								<td>Quality of repairs can be improved by: repair information and guides provided by the Manufacturer, having trained personnel and having the right 
+								technology will improve the quality of repairs.</td>
+							</tr>
+							<tr>
+								<td>Speed of repair</td>
+								<td>Speed of repair can be crucial to the customer and slow repair times can lose business. </td>
+								<td>Quick repairs can secure future business and improve reputation. Having the right technology can improve time to diagnose the problems.
+								Product design can be improved to assist maintenance/repair.</td>
+							</tr>
+							<tr>
+								<td>Organisation required to support the maintenance</td>
+								<td>New skills, processes and finances to introduce or improve the service.</td>
+								<td>Improved service to the customer can improve reputation and long-term value. Also possible to outsource some activities.</td>
+							</tr>
+							<tr>
+								<td>Waste streams from maintenance process, e.g. lubricants</td>
+								<td>Multiple waste streams can be generated, which need to be managed onsite and offsite. </td>
+								<td>Waste streams can be reused through Industrial Symbiosis, potentially for financial gain.</td>
+							</tr>
+								
+							
+						</table>
+						
+					</p>
+						
+                    </div>
+                    <h3><a href="#">Product Design</a></h3>
+                    <div>
+                        <p>
+                            To improve maintenance, the following should be considered in the design phase, or if the product already has these 
+							features, there could be potential to offer a maintenance service:
+							
+							<div style="margin-left: 3em;">
+							<ul>
+							
+								<li>Easy access to parts</li>
+								<li>Fault diagnostics</li>
+								<li>Handling and mounting of parts</li>
+								<li>Safety for technicians </li>
+								<li>Part inter-changeability</li>
+								<li>Identification of components and leads</li>
+								<li>Access to lubrication points</li>
+								<li>Reduced electrical connections</li>
+								<li>Redundancy features</li>
+								<li>Final adjustments</li>
+								
+							
+							</ul>
+							</div>
+							
+							<div align="right">
+								(Smith and Babb, 1973)
+							</div>
+							
+													
+                        </p>
+                    </div>
+
+                    <h3><a href="#">Case studies</a></h3>
+                    <div id="slideshow">
+                <div id="nav_left">
+                <img src="images/left_arrow.png" alt="Left" title="Click Here" />
+                </div>
+                <div id="main-slider">
+                    <ul>
+                        <li>
+                        <img src="images/slideshow/patagonia.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                       
+                        <p><strong>Patagonia</strong> outdoor clothing company offer repairs to worn or damaged clothes. The clothing items can be sent to Patagonia and they will repair and return the items within 10 business working days. <a target="_blank" href="http://www.patagonia.com/us/common-threads/repair">Link</a></p>
+                        
+                        
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/dell.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                        <p><strong>Dell</strong> computers offer repairs and support for their laptops and computers. They provide step-by-step diagnostics, parts, upgrades, downloads and manuals to give the customer all the information and support to resolve their computer issues. In addition, Dell offer a repair service for any hardware issues the computers may have.
+							<a target="_blank" href="http://www.dell.com/support/troubleshooting/us/en/04/Product/latitude-d430">Link</a></p>
+                        
+                        </span>
+                        </li>
+                        
+                       <!-- <li>
+                        <img src="images/slideshow/image5.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a class="readmore" href="#">Read more</a></p>
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/image4.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s... <a class="readmore" href="#">Read more</a></p>
+                        </span>
+                        </li>
+                        
+                        <li>
+                        <img src="images/slideshow/image3.jpg" alt="Graphic Design" align="left" title="Graphic Design" />
+                        <span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.. <a class="readmore" href="#">Read more</a></p>
+                        
+                        </span>
+                        </li>-->
+                        
+                        
+                    </ul>
+                </div>    
+                <div id="nav_right">
+                <img src="images/right_arrow.png" alt="Right" title="Click Here"/>
+                </div>
+            </div>
+                </div>
+                        <a class="button modalbox" href="#inline"><font color = "white"> Add your own case study<font color></a></p>
+
+			</div>
+		</div>
+		<aside id="sideLeft">
+            <p>&nbsp;</p>
+            <img src="images/Circ3.png" usemap="#sb21186" width="352" height="383" alt="click map" border="0" class="map"/>
+            <map id="sb21186" name="sb21186">
+                <area shape="circle" id="squid1" alt="some_text_1" coords="179,56,45"  href="design-manufacture-distribute.html" data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Design, Manufacture and Distribute"/>	
+                <area shape="circle" id="squid2" alt="some_text_2" coords="295,125,45" href="usage.html"                         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Usage"/>	
+                <area shape="circle" id="squid3" alt="some_text_3" coords="293,261,45" href="maintain-repair.html"               data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Maintain / Repair"/>	
+                <area shape="circle" id="squid4" alt="some_text_4" coords="175,326,45" href="reuse-redistribute.html"            data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Reuse / Redistribute"/>	
+                <area shape="circle" id="squid5" alt="some_text_5" coords="59,257,45"  href="refurbish-remanufacture.html"       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Refurbish / Remanufacture"/>	
+                <area shape="circle" id="squid6" alt="some_text_6" coords="61,122,45"  href="recycle.html"                       data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Recycle"/>	
+                <area shape="circle" id="squid7" alt="some_text_7" coords="177,192,56" href="products-as-a-service.html"         data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Products as a Service"/>	
+				<area shape="rectangle" id="squid7" alt="some_text_7" coords="1,1,52,50" href="tools.html" 						 data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":0.5}' title="Tools"/>
+				
+				</map>
+		</aside>
+	</section>
+</div>
+<p>&nbsp;</p>
+<footer id="footer">
+    <center>
+	<br/><a href="mailto:jle38@cam.ac.uk"><img src="images/Feedback.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.surveymonkey.com/s/28S73JB"><img src="images/Survey.png" width="140"align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="Press%20Release_Circular%20Economy%20Toolkit.doc"><img src="images/PressRelease.png" alt="CE Toolkit Press Release" width="140" align = "middle"/></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html"><img src="images/About.png" width="140"align = "middle"/></a>
+	</center>
+</footer>
+</body>
+
+<!-- Mirrored from circulareconomytoolkit.org/maintain-repair.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Dec 2020 21:35:09 GMT -->
+</html>

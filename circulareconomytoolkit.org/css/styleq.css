@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+.button {
+   		color: #009FE3 !important;
+}
+	.button:hover, .button:focus {
+		color: #4d4d4d !important;
+	}
+	.button:active {
+	}
+#send, #send_user
+{
+	background-color: #222;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    background-image: -moz-linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    background-image: -ms-linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    background-image: -o-linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    background-image: linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    border: 1px solid #111;
+    color: #c6c6c6;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 18px/12px;
+    font-family: 'Verdana', Geneva, sans-serif;
+    margin: 20px;
+    padding: 9px 14px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.8);
+    vertical-align: top;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+	#send:hover, #send:focus {
+		background-color: #242424;
+		color: #f6f6f6;
+	}
+	#send:active {
+		background-color: #202020;
+		color: #b6b6b6;
+		padding: 16px 20px;
+	}
+#inline { display: none; width: 600px; }
+
+#inline_info { display: none; width: 650px; padding-right:30px;}
+
+/* --- The Form --- */
+#contact {  }
+
+#contact fieldset {
+border:5px solid #009cdf;
+    padding: 20px;
+	 border-radius: 25px;
+	 -moz-border-radius: 25px;
+	 -webkit-border-radius: 25px;
+	 -o-border-radius: 25px;
+}
+
+#contact legend {
+    border: 1px solid #EEEEEE;
+    color: #617797;
+    margin-bottom: 0 !important;
+    padding: 7px 10px;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+#contact label {
+    display: inline-block;
+    float: left;
+    font-size: 1em;
+    height: 26px;
+    line-height: 26px;
+    width: 175px;
+}
+
+#contact input, #contact textarea, #contact select {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font: 1em "Dosis";
+    margin: 5px 0;
+    padding: 5px;
+    width: 360px;
+	border-radius: 3px;
+}
+
+#contact .button { border-radius: 3px; margin: 5px 20px 10px 155px; }
+
+#contact input:focus, #contact textarea:focus { border: 1px solid #eee; color: #444; background: #fff; }
+
+#contact .error { border: 1px solid #973d3d; background: #f0bebe; color: #a35959; }
+#contact .error:focus { border: 1px solid #eee; color: #a35959; }
+
+/* --- Footer Styles --- */
